@@ -1,0 +1,42 @@
+.navbar{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    transition: all 0.25s;
+   
+}
+.navbar-top,
+.navbar-middle,
+.navbar-bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: black;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+.navbar-middle{
+    transform: translateY(7px);
+}
+.navbar-bottom{
+    transform: translateY(14px);
+}
+.open{
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+.open .navbar-top{
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .navbar-middle{
+  display: none;
+}
+
+.open .navbar-bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+

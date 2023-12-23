@@ -1,0 +1,23 @@
+$main-color: gray;
+$background-color: black;
+$text-color: white;
+$h1:5.5rem;
+$h2:3.5rem;
+$h3:1.5rem;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-color;
+}
+.home{
+    background-color: $main-color;
+    color: $text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-size: $h3;
+    }
+}
